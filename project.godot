@@ -1,0 +1,26 @@
+; Проект Godot 4. Откройте этот файл в менеджере проектов и нажмите F6 или F5.
+config_version=5
+
+[application]
+config/name="Quack"
+config/description="Проведи робоутку через шлюз, став напарником самому себе."
+run/main_scene="res://menu.tscn"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+config/icon="res://duck.svg"
+
+[autoload]
+Campaign="*res://scripts/campaign.gd"
+
+[display]
+window/size/viewport_width=1056
+window/size/viewport_height=428
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.045, 0.075, 0.083, 1)
+
+[physics]
+common/physics_ticks_per_second=60
